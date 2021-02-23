@@ -3,30 +3,46 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- Title -->
         <link rel="icon" href="./resources/images/lvc.png" />
         <title>Alvin Chaidrata</title>
+
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSS -->
         <link rel="stylesheet" href="style.css">
+
+        <!-- AOS -->
         <link rel="stylesheet" href="resources/aos/aos-master/dist/aos.css" />
-        <script src="https://kit.fontawesome.com/5d8f0b4293.js" crossorigin="anonymous"></script>
         <script src="resources/aos/aos-master/dist/aos.js"></script>
+
+        <!-- Icons -->
+        <script src="https://kit.fontawesome.com/5d8f0b4293.js" crossorigin="anonymous"></script>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        
     </head>
     <body>
         <div class="body-wrapper">
             <div class="home-wrapper">
                 <div class="home-left-wrapper">
-                    <div class="span-1" data-aos="fade-right">
+                    <div class="text-1" data-aos="fade-right">
                         My Name is
                     </div>
-                    <div class="span-2" data-aos="fade-down" data-aos-delay="400">
+                    <div class="text-2" data-aos="fade-down" data-aos-delay="400">
                         Alvin Chaidrata
                     </div>
-                    <div class="span-3" data-aos="fade-down" data-aos-delay="800">
+                    <div class="text-3" data-aos="fade-down" data-aos-delay="800">
                         Welcome to My
                         <span style="color: #7DE2D1;">Portfolio.</span>
                     </div>
-                    <div data-aos="fade-top" data-aos-delay="1200">
+                    <div class="resume" data-aos="fade-top" data-aos-delay="1200">
                         <a class="resume-button" href="alvin-resume.pdf" download>
                             <i class="fas fa-download"></i>
                             Resume
@@ -43,9 +59,10 @@
                 </div>
             </div>
             <div class="about-wrapper" data-aos="fade-down">
-                <div class="about-left-wrapper">
-                    <span id="about-span-1">About Me</span>
-                    <br />
+                <div class="about-content-wrapper">
+                    <div class="title-text">
+                        About Me
+                    </div>
                     <p>Hi, my name is Alvin Chaidrata. I am a year 2 Computer Science student in the University of Nottingham.</p>
                     <p>
                         Ever since I was little, I am continuously exposed to technologies. I remember how my mind went wild after seeing a laptop for the first time. Thoughts like how are
@@ -60,11 +77,11 @@
                 </div>
             </div>
             <div class="skills-wrapper">
-                <div class="skills-top-wrapper" data-aos="fade-right">
+                <div class="title-text" data-aos="fade-right">
                     Skills
                     <hr />
                 </div>
-                <div class="skills-bottom-wrapper">
+                <div class="skills-content-wrapper">
                     <div class="skills-cards" data-aos="zoom-in" data-aos-delay="400">
                         <div class="top">
                             <i class="fab fa-cuttlefish"></i>
@@ -132,16 +149,13 @@
                 </div>
             </div>
             <div class="projects-wrapper">
-                <div class="projects-top-wrapper" data-aos="fade-right">
+                <div class="title-text" data-aos="fade-right">
                     Projects
                     <hr />
                 </div>
-                <div data-aos="fade-right" data-aos-delay="200">
-                    <span id="projects-text">Featured Projects</span>
-                </div>
-                <div class="projects-featured-wrapper">
-                    <div class="featured-cards" data-aos="fade-left" data-aos-delay="400">
-                        <div class="featured-left">
+                <div class="projects-content-wrapper">
+                    <div class="project-cards" data-aos="fade-left" data-aos-delay="400">
+                        <div class="left">
                             <h1>Shing Tik Vegetarian Sdn Bhd ChatBot</h1>
                             <ul>
                                 <li>Provides customers with a 24/7 customer service line, allowing the customers to enquire about the company outside of office hours.</li>
@@ -152,7 +166,7 @@
                                 <li>Used Google's Dialogflow along with node.Js .</li>
                             </ul>
                         </div>
-                        <div class="featured-right">
+                        <div class="right">
                             <div class="top">
                                 <i class="fas fa-hourglass-half" title="In Progress"></i>
                             </div>
@@ -166,8 +180,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="featured-cards" data-aos="fade-left" data-aos-delay="400">
-                        <div class="featured-left">
+                    <div class="project-cards" data-aos="fade-left" data-aos-delay="400">
+                        <div class="left">
                             <h1>Nottingham Computer Science Society Website</h1>
                             <ul>
                                 <li>Displays information regarding the society and the staffs involved.</li>
@@ -176,7 +190,7 @@
                                 <li>The site is mobile responsive</li>
                             </ul>
                         </div>
-                        <div class="featured-right">
+                        <div class="right">
                             <div class="top">
                                 <i class="fas fa-hourglass-half" title="In Progress"></i>
                             </div>
@@ -193,62 +207,66 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div data-aos="fade-right" >
-                    <span id="projects-text">More Projects</span>
-                </div>
-                <div class="projects-more-wrapper">
-                    <div class="more-cards" data-aos="fade-right" data-aos-delay="200">
-                        <div class="top">
-                            <a href="https://github.com/alvinchaidrata/personal-porfolio-website" class="git-link"><i class="fab fa-github"></i></a>
-                        </div>
-                        <div class="middle">
+                    <div class="project-cards" data-aos="fade-left" data-aos-delay="400">
+                        <div class="left">
                             <h1>Portfolio Website</h1>
                             <ul>
                                 <li>This website.</li>
                             </ul>
                         </div>
-                        <div class="bottom">
-                            <div class="items">
-                                <i class="fab fa-html5"></i>HTML
+                        <div class="right">
+                            <div class="top">
+                                <a href="https://github.com/alvinchaidrata/personal-porfolio-website" class="git-link"><i class="fab fa-github"></i></a>
                             </div>
-                            <div class="items">
-                                <i class="fab fa-css3-alt"></i>CSS
+                            <div class="bottom">
+                                <div class="items">
+                                    <i class="fab fa-html5"></i>HTML
+                                </div>
+                                <div class="items">
+                                    <i class="fab fa-css3-alt"></i>CSS
+                                </div>
+                                <div class="items">
+                                    <i class="fab fa-js"></i>JavaScript
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="more-cards" data-aos="fade-right" data-aos-delay="400">
-                        <div class="top">
-                            <a href="https://github.com/alvinchaidrata/frogger-arcade-game" class="git-link"><i class="fab fa-github"></i></a>
-                        </div>
-                        <div class="middle">
+                    <div class="project-cards" data-aos="fade-left" data-aos-delay="400">
+                        <div class="left">
                             <h1>Frogger Arcade Game</h1>
-                            <ul>
-                                <li>Maintained the legacy frogger game by refactoring the original code and adding new features into it.</li>
-                            </ul>
+                                <ul>
+                                    <li>Maintained the legacy frogger game by refactoring the original code and adding new features into it.</li>
+                                </ul>
                         </div>
-                        <div class="bottom">
-                            <div class="items">
-                                <i class="fab fa-java"></i>Java
+                        <div class="right">
+                            <div class="top">
+                                <a href="https://github.com/alvinchaidrata/frogger-arcade-game" class="git-link"><i class="fab fa-github"></i></a>
                             </div>
-                            <div class="tems">
-                                <i class="fas fa-laptop-code"></i>JavaFX
+                            <div class="bottom">
+                                <div class="items">
+                                    <i class="fab fa-java"></i>Java
+                                </div>
+                                <div class="items">
+                                    <i class="fas fa-laptop-code"></i>JavaFX
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="more-cards" data-aos="fade-right" data-aos-delay="600">
-                        <div class="top">
-                            <a href="https://github.com/alvinchaidrata/process-scheduler-calculator/blob/main/process-scheduler-calculator.c" class="git-link"><i class="fab fa-github"></i></a>
-                        </div>
-                        <div class="middle">
+                    <div class="project-cards" data-aos="fade-left" data-aos-delay="400">
+                        <div class="left">
                             <h1>Process Scheduler Calculator</h1>
-                            <ul>
-                                <li>Produces a table of wait time, turn time and their averages from a set of given processes.</li>
-                            </ul>
+                                <ul>
+                                    <li>Produces a table of wait time, turn time and their averages from a set of given processes.</li>
+                                </ul>
                         </div>
-                        <div class="bottom">
-                            <div class="items">
-                                <i class="fab fa-cuttlefish"></i>C
+                        <div class="right">
+                            <div class="top">
+                                <a href="https://github.com/alvinchaidrata/process-scheduler-calculator/blob/main/process-scheduler-calculator.c" class="git-link"><i class="fab fa-github"></i></a>
+                            </div>
+                            <div class="bottom">
+                                <div class="items">
+                                    <i class="fab fa-cuttlefish"></i>C
+                                </div>
                             </div>
                         </div>
                     </div>
